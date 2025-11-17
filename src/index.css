@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Basic school-friendly theme */
+:root{
+  --primary:#2a6f97;    /* deep blue */
+  --accent:#f7b733;     /* warm yellow */
+  --muted:#f4f6f8;
+  --card:#ffffff;
+  --text:#213547;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  background: linear-gradient(180deg, #f8fbff 0%, #f4f6f8 100%);
+  color:var(--text);
+  font-family: "Nunito", "Segoe UI", Roboto, sans-serif;
 }
+
+.navbar-school{
+  background: linear-gradient(90deg, rgba(42,111,151,1) 0%, rgba(38,83,120,1) 100%);
+  color:white;
+}
+.brand {
+  font-weight:700;
+  letter-spacing:0.6px;
+}
+.hero{
+  background: linear-gradient(180deg, rgba(42,111,151,0.06), rgba(247,183,51,0.03));
+  padding:30px;
+  border-radius:12px;
+}
+.card-school{
+  border-radius:12px;
+  box-shadow: 0 6px 18px rgba(34,60,80,0.08);
+}
+.btn-accent{
+  background:var(--accent);
+  border:none;
+  color:#122;
+}
+.small-muted { color: #6c7a89; }
+.footer {
+  background: #0f1724;
+  color: #cbd5e1;
+  padding: 20px 0;
+}
+.kpi {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+.table-actions button { margin-right:6px; }
